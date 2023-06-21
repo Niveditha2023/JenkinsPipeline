@@ -22,7 +22,7 @@ pipeline {
                 echo 'Testing'
             }
         }
-        stage('Release') {
+        stage('Release the Product') {
             steps {
                 echo 'Releasing'
             }
