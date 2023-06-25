@@ -7,7 +7,7 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Build') {
+      stage('Build') {
             steps {
                 echo 'Building'
             }
@@ -22,6 +22,12 @@ pipeline {
                 echo 'Testing'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying'
+            }
+        }
+
         stage('Release the Product') {
             steps {
                 echo 'Releasing'
